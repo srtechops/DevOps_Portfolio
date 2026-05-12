@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Professional DevOps Engineer portfolio showcasing skills, projects, and experience." />
+  <title>Portfolio — DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name" id="nav-logo-name">Portfolio</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">myinfo</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" id="navbar-resume-btn" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">View
+          Resume</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#" id="mobile-resume-btn" class="btn btn-outline btn-sm mobile-resume" target="_blank"
+        rel="noopener noreferrer">View Resume</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content reveal">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        <span id="hero-badge-text">Available for opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text" id="hero-name">Your Name</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-title-text">DevOps Engineer &amp; Cloud Architect</p>
+      <p class="hero-intro" id="hero-intro">Building scalable infrastructure and automating the future, one pipeline at
+        a time.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#" id="hero-resume-btn" class="btn btn-glass" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+          View Resume
+        </a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat"><span class="stat-num" id="stat-exp">3+</span><span class="stat-label">Years Exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" id="stat-projects">20+</span><span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" id="stat-certs">5+</span><span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="terminal-card glass-card tilt-card">
+        <div class="terminal-header">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">terminal</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <div class="t-line"><span class="t-prompt">$ </span><span class="t-cmd typed-text" id="typed-cmd"></span><span
+              class="cursor">|</span></div>
+          <div class="t-output" id="terminal-output"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p id="about-text" class="about-paragraph"></p>
+          <div class="about-tags" id="about-tags"></div>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card glass-card tilt-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <div class="info-label">Location</div>
+              <div class="info-value" id="info-location"></div>
+            </div>
+          </div>
+          <div class="info-card glass-card tilt-card">
+            <div class="info-icon">✉️</div>
+            <div>
+              <div class="info-label">Email</div>
+              <div class="info-value" id="info-email"></div>
+            </div>
+          </div>
+          <div class="info-card glass-card tilt-card">
+            <div class="info-icon">💼</div>
+            <div>
+              <div class="info-label">Status</div>
+              <div class="info-value" id="info-status"></div>
+            </div>
+          </div>
+          <div class="info-card glass-card tilt-card">
+            <div class="info-icon">🎓</div>
+            <div>
+              <div class="info-label">Education</div>
+              <div class="info-value" id="info-education"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-filter reveal" id="skills-filter"></div>
+      <div class="skills-grid" id="skills-grid"></div>
+      <div class="admin-add-row" id="skills-add-row" style="display:none">
+        <button class="btn btn-glass btn-sm" id="add-skill-btn">➕ Add Skill</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+      <div class="admin-add-row" id="projects-add-row" style="display:none">
+        <button class="btn btn-glass btn-sm" id="add-project-btn">➕ Add Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+      <div class="timeline" id="experience-timeline"></div>
+      <div class="admin-add-row" id="experience-add-row" style="display:none">
+        <button class="btn btn-glass btn-sm" id="add-experience-btn">➕ Add Experience</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <p class="contact-desc" id="contact-desc"></p>
+          <div class="social-links" id="social-links"></div>
+        </div>
+        <div class="contact-card glass-card">
+          <h3>Send a Message</h3>
+          <p class="contact-note">This is a static portfolio. Connect via email or social links.</p>
+          <a href="#" id="contact-email-btn" class="btn btn-primary btn-full">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            Send Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-copy" id="footer-copy">&copy; 2025 Portfolio. Built with ❤️</p>
+      <div class="footer-links" id="footer-social"></div>
+      <button class="admin-lock" id="admin-lock" title="Admin" aria-label="Admin login"
+        ondblclick="openLoginModal()">🔒</button>
+    </div>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal-overlay" id="login-modal" role="dialog" aria-modal="true" aria-labelledby="login-title"
+    style="display:none">
+    <div class="modal-box glass-card">
+      <button class="modal-close" id="login-close" aria-label="Close modal">✕</button>
+      <div class="modal-icon">🔐</div>
+      <h2 id="login-title">Admin Login</h2>
+      <p class="modal-sub">Enter credentials to access edit mode</p>
+      <form id="login-form" novalidate>
+        <div class="field-group">
+          <label for="login-user">Username</label>
+          <input type="text" id="login-user" placeholder="admin" autocomplete="username" />
+        </div>
+        <div class="field-group">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <p class="login-error" id="login-error" role="alert"></p>
+        <button type="submit" class="btn btn-primary btn-full">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- EDIT MODAL -->
+  <div class="modal-overlay" id="edit-modal" role="dialog" aria-modal="true" aria-labelledby="edit-modal-title"
+    style="display:none">
+    <div class="modal-box glass-card modal-wide">
+      <button class="modal-close" id="edit-close" aria-label="Close modal">✕</button>
+      <h2 id="edit-modal-title">Edit Item</h2>
+      <form id="edit-form">
+        <div id="edit-fields"></div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="edit-cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="edit-save">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADMIN TOOLBAR -->
+  <div class="admin-toolbar" id="admin-toolbar" style="display:none" role="toolbar" aria-label="Admin toolbar">
+    <div class="toolbar-inner">
+      <span class="toolbar-brand">⚙️ Admin</span>
+      <label class="toggle-switch" for="edit-mode-toggle">
+        <input type="checkbox" id="edit-mode-toggle" />
+        <span class="toggle-slider"></span>
+        <span class="toggle-label">Edit Mode</span>
+      </label>
+      <button class="btn btn-sm btn-ghost" id="admin-logout">Logout</button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Scripts (load order: data → admin → render → animations → app) -->
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
